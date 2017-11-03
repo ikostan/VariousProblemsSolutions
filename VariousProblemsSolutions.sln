@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariousProblemsSolutions", "VariousProblemsSolutions\VariousProblemsSolutions.csproj", "{B0FA251E-FE70-4A91-B924-7967B4931DD3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseInteger", "VariousProblemsSolutions\ReverseInteger.csproj", "{B0FA251E-FE70-4A91-B924-7967B4931DD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
