@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringToInteger", "StringTo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddTwoNumbers", "AddTwoNumbers\AddTwoNumbers.csproj", "{094F3E67-57E9-4AF9-A365-5006CAE6EFD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeNumber", "PalindromeNumber\PalindromeNumber.csproj", "{E4233E46-9B25-45C6-A89A-2B4D5C6C6DFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{094F3E67-57E9-4AF9-A365-5006CAE6EFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{094F3E67-57E9-4AF9-A365-5006CAE6EFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{094F3E67-57E9-4AF9-A365-5006CAE6EFD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4233E46-9B25-45C6-A89A-2B4D5C6C6DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4233E46-9B25-45C6-A89A-2B4D5C6C6DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4233E46-9B25-45C6-A89A-2B4D5C6C6DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4233E46-9B25-45C6-A89A-2B4D5C6C6DFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
