@@ -17,9 +17,16 @@ namespace VariousProblemsSolutions
 
         static void Main(string[] args)
         {
-
+            //Test cases:
+            Console.WriteLine(SimpleReverse(0));
+            Console.WriteLine(SimpleReverse(1));
+            Console.WriteLine(SimpleReverse(-1));
             Console.WriteLine(SimpleReverse(321));
             Console.WriteLine(SimpleReverse(-321));
+            Console.WriteLine(SimpleReverse(-2147483648));
+            Console.WriteLine(SimpleReverse(2147483647));
+            Console.WriteLine(SimpleReverse(Int32.MaxValue));
+            Console.WriteLine(SimpleReverse(Int32.MinValue));
 
             Console.ReadKey();
         }
@@ -35,14 +42,29 @@ namespace VariousProblemsSolutions
 
             int result = 0;
 
-            if (x >= Int32.MaxValue || x < Int32.MinValue)
+            if (x >= Int32.MaxValue || x <= Int32.MinValue)
             {
+                //System.Overflow
                 result = 0;
             }
-            else if(x > 0 || x < 0) 
+            else if (x > 0 || x < 0)
             {
-                int tempX = Math.Abs(x);
-                string temp = x.ToString();
+                int tempX;
+
+                if (x < 0)
+                {
+                    tempX = x * -1;
+                }
+                else
+                {
+                    tempX = x;
+                }
+
+                Debug.WriteLine($"tempX: {tempX}");
+
+                string temp = tempX.ToString();
+                Debug.WriteLine($"temp: {temp}");
+
                 char[] arr = temp.ToCharArray();
                 Array.Reverse(arr);
 
@@ -54,6 +76,8 @@ namespace VariousProblemsSolutions
                     {
                         temp += chr;
                     }
+
+                    Debug.WriteLine($"temp: {temp}");
 
                     try
                     {
@@ -71,12 +95,14 @@ namespace VariousProblemsSolutions
                         result = 0;
                     }
                 }
-                else
-                {
+                else {
                     result = x;
                 }
-
             }
+            else
+            {
+                result = x;
+            }          
 
             return result;
         }
