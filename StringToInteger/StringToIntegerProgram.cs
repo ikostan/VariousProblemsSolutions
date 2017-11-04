@@ -32,7 +32,7 @@ namespace StringToInteger
 
             //Test cases: "  -0012a42", "", "1", "-1", "+1", "-2147483648", "2147483648", "-2147483649";
 
-            MyAtoi("2147483648");
+            Console.WriteLine(MyAtoi("2147483648"));
 
             Console.ReadKey();
         }
