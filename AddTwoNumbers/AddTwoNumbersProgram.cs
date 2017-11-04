@@ -30,6 +30,21 @@ namespace AddTwoNumbers
             // [9] and [9] ==> [8,1]
             // [1,8] and [0] ==> [1,8]
 
+
+            ListNode l1 = new ListNode(1);
+            ListNode l3 = new ListNode(8);
+            l1.next = l3;
+
+            ListNode l2 = new ListNode(0);
+
+            ListNode resultNode = AddTwoNumbers(l1, l2);
+
+            while (resultNode != null)
+            {
+                Console.WriteLine(resultNode.val);
+                resultNode = resultNode.next;
+            }
+
             Console.ReadKey();
         }
 
@@ -84,3 +99,4 @@ namespace AddTwoNumbers
         }
 
     }
+}
