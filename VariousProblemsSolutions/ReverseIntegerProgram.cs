@@ -32,6 +32,13 @@ namespace VariousProblemsSolutions
         }
 
 
+        public static int Reverse(int x) {
+
+            int result = 0;
+
+            return result;
+        }
+
         /// <summary>
         /// 
         /// </summary>
