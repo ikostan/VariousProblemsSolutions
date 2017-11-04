@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace AddTwoNumbers
 {
-    class Program
+    class AddTwoNumbersProgram
     {
 
         /// <summary>

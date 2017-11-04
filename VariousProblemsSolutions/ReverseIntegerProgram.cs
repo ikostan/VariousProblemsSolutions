@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace VariousProblemsSolutions
 {
-    class Program
+    class ReverseIntegerProgram
     {
         /// <summary>
         /// 7. Reverse Integer
