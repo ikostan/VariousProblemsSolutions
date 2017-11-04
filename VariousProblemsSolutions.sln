@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseInteger", "VariousPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringToInteger", "StringToInteger\StringToInteger.csproj", "{1D6441AC-BDB8-413C-BBBF-52C5E0265DCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddTwoNumbers", "AddTwoNumbers\AddTwoNumbers.csproj", "{094F3E67-57E9-4AF9-A365-5006CAE6EFD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1D6441AC-BDB8-413C-BBBF-52C5E0265DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D6441AC-BDB8-413C-BBBF-52C5E0265DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D6441AC-BDB8-413C-BBBF-52C5E0265DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{094F3E67-57E9-4AF9-A365-5006CAE6EFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{094F3E67-57E9-4AF9-A365-5006CAE6EFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{094F3E67-57E9-4AF9-A365-5006CAE6EFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{094F3E67-57E9-4AF9-A365-5006CAE6EFD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
