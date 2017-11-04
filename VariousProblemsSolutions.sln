@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseInteger", "VariousProblemsSolutions\ReverseInteger.csproj", "{B0FA251E-FE70-4A91-B924-7967B4931DD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseInteger", "VariousProblemsSolutions\ReverseInteger.csproj", "{B0FA251E-FE70-4A91-B924-7967B4931DD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringToInteger", "StringToInteger\StringToInteger.csproj", "{1D6441AC-BDB8-413C-BBBF-52C5E0265DCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B0FA251E-FE70-4A91-B924-7967B4931DD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0FA251E-FE70-4A91-B924-7967B4931DD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0FA251E-FE70-4A91-B924-7967B4931DD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D6441AC-BDB8-413C-BBBF-52C5E0265DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D6441AC-BDB8-413C-BBBF-52C5E0265DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D6441AC-BDB8-413C-BBBF-52C5E0265DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D6441AC-BDB8-413C-BBBF-52C5E0265DCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
