@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeNumber", "Palindr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanToInteger", "RomanToInteger\RomanToInteger.csproj", "{EC0352F2-2F64-4D1A-9095-F8987CFBC6E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JudgeRouteCircle", "JudgeRouteCircle\JudgeRouteCircle.csproj", "{B7D540E4-006C-473E-ACED-3F73DDA83FFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{EC0352F2-2F64-4D1A-9095-F8987CFBC6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC0352F2-2F64-4D1A-9095-F8987CFBC6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC0352F2-2F64-4D1A-9095-F8987CFBC6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7D540E4-006C-473E-ACED-3F73DDA83FFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D540E4-006C-473E-ACED-3F73DDA83FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D540E4-006C-473E-ACED-3F73DDA83FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D540E4-006C-473E-ACED-3F73DDA83FFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
