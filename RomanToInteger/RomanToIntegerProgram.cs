@@ -32,13 +32,13 @@ namespace RomanToInteger
             int sum = 0;
             char[] chrArr = str.ToCharArray();
 
-            for(int i = 0; i < chrArr.Length; i++)
+            for (int i = 0; i < chrArr.Length; i++)
             {
                 if (i == 0 && chrArr[i] == 'M')
                 {
                     sum = ConvertRomanToInt(chrArr[i]);
                 }
-                else if (i + 1 < chrArr.Length && ConvertRomanToInt(chrArr[i]) < ConvertRomanToInt(chrArr[i+1]))
+                else if (i + 1 < chrArr.Length && ConvertRomanToInt(chrArr[i]) < ConvertRomanToInt(chrArr[i + 1]))
                 {
                     sum += ConvertRomanToInt(chrArr[i + 1]) - ConvertRomanToInt(chrArr[i]);
                     i++;
@@ -54,12 +54,10 @@ namespace RomanToInteger
 
         private static int ConvertRomanToInt(char chr)
         {
-
             int result = 0;
 
             switch (chr)
             {
-
                 case 'I':
                     result = 1;
                     break;
@@ -83,7 +81,6 @@ namespace RomanToInteger
                     break;
                 default:
                     break;
-
             }
 
             return result;
