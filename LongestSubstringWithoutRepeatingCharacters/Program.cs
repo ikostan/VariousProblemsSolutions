@@ -24,30 +24,46 @@ namespace LongestSubstringWithoutRepeatingCharacters
           
         Src: https://leetcode.com/problems/longest-substring-without-repeating-characters/description/   
         
-            Test cases: "abcabcbb", "pwwkew"
+            Test cases: "abcabcbb", "pwwkew", "c", "au", "dvdf"
         */
 
         static void Main(string[] args)
         {
-
+            Program prg = new Program();
+            Console.WriteLine(prg.LengthOfLongestSubstring("dvdf"));
+            Console.ReadKey();
         }
 
         public int LengthOfLongestSubstring(string s)
         {
             int length = 0;
+            int index = 0;
             HashSet<char> unique = new HashSet<char>();
+            char[] chrSet = s.ToCharArray();
 
-            foreach (char chr in s)
+
+            while (index < s.Length)
             {
-                if (!unique.Contains(chr))
+                for (int i = index; i < s.Length; i++)
                 {
-                    unique.Add(chr);
-                    length++;
+                    if (!unique.Contains(chrSet[i]))
+                    {
+                        unique.Add(chrSet[i]);
+
+                        if (unique.Count() > length)
+                        {
+                            length = unique.Count();
+                        }
+                    }
+                    else
+                    {
+                        unique.Clear();
+                        break;
+                    }
                 }
-                else
-                {
-                    break;
-                }
+
+                index++;
+                Debug.WriteLine($"index: {index}, length: {length}");
             }
 
             return length;
