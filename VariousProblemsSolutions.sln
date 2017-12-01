@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JudgeRouteCircle", "JudgeRo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSum", "TwoSum\TwoSum.csproj", "{BA820FA6-2994-412B-9546-4B739899F347}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestSubstringWithoutRepeatingCharacters", "LongestSubstringWithoutRepeatingCharacters\LongestSubstringWithoutRepeatingCharacters.csproj", "{A2711EEA-3C92-4D92-8FF0-C9F1A940A491}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{BA820FA6-2994-412B-9546-4B739899F347}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA820FA6-2994-412B-9546-4B739899F347}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA820FA6-2994-412B-9546-4B739899F347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2711EEA-3C92-4D92-8FF0-C9F1A940A491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2711EEA-3C92-4D92-8FF0-C9F1A940A491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2711EEA-3C92-4D92-8FF0-C9F1A940A491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2711EEA-3C92-4D92-8FF0-C9F1A940A491}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -30,20 +30,16 @@ namespace TwoSum
 
         public int[] TwoSum(int[] nums, int target)
         {
-
             int i = 0, b;
             int[] result = new int[2];
             bool isDone = false;
 
             while (!isDone)
             {
-
                 for (b = i + 1; b < nums.Count(); b++)
                 {
-
                     if (nums[i] + nums[b] == target)
                     {
-
                         result[0] = i;
                         result[1] = b;
                         isDone = true;
