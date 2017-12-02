@@ -7,7 +7,8 @@ namespace LongestPalindromicSubstring
     class Program
     {
         /*
-        
+        #5: Longest Palindromic Substring:
+
         Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
 
         Example: 
@@ -21,6 +22,10 @@ namespace LongestPalindromicSubstring
         Example:
         Input: "a", Output: "a"
 
+        Example:
+        Input: "bb", Output: "bb"
+
+            Src: https://leetcode.com/problems/longest-palindromic-substring/
         */
 
         static void Main(string[] args)
@@ -28,7 +33,20 @@ namespace LongestPalindromicSubstring
             Console.WriteLine("Longest Palindromic Substring:\n");
 
             Program prg = new Program();
-            Console.WriteLine(prg.LongestPalindrome("babad"));
+
+            string[] arr = new string[] {
+                "a",
+                "bb",
+                "babad",
+                "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth"
+            };
+
+            foreach (string str in arr)
+            {
+                Console.WriteLine(prg.LongestPalindrome(str));
+            }
+
+            //Console.WriteLine(prg.LongestPalindrome("civilw"));
 
             Console.ReadKey();
         }
@@ -38,36 +56,8 @@ namespace LongestPalindromicSubstring
             StringBuilder str = new StringBuilder("", 1000);
 
             if (s.Length > 1)
-            {
-                for (int a = 0; a < s.Length - 1; a++)
-                {
-                    for (int i = 1; i < s.Length; i++)
-                    {
-                        if (a + i <= s.Length)
-                        {
-                            string value = s.Substring(a, i);
-
-                            if (string.Compare(
-                                    value,
-                                    ReverseString(value),
-                                    StringComparison.CurrentCultureIgnoreCase) == 0)
-                            {
-                                if (value.Length > str.Length)
-                                {
-                                    Debug.WriteLine($"original str: {str.ToString()}");
-                                    str.Remove(0, str.Length);
-                                    Debug.WriteLine($"deleted str: {str.ToString()}");
-                                    str.Insert(0, value);
-                                    Debug.WriteLine($"new str: {str.ToString()}");
-                                }
-                            }
-                        }
-                        else
-                        {
-                            break;
-                        }
-                    }
-                }
+            { 
+                
             }
             else
             {
@@ -76,6 +66,7 @@ namespace LongestPalindromicSubstring
 
             return str.ToString();
         }
+
 
         /// <summary>
         /// Reverse string
@@ -87,7 +78,7 @@ namespace LongestPalindromicSubstring
             char[] reverse = str.ToCharArray();
             Array.Reverse(reverse);
             string rStr = new string(reverse);
-            Debug.WriteLine($"original: {str}, reversed: {rStr}");
+            //Debug.WriteLine($"original: {str}, reversed: {rStr}");
             return rStr;
         }
 
