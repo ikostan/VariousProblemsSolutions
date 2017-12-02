@@ -24,11 +24,12 @@ namespace LongestCommonPrefix
             //Test cases:
             List<string[]> strList = new List<string[]>();
             strList.Add(new string[] { "" });               //Returns empty string
-            strList.Add(new string[] { "a", "b" });         //Returns empty string
-            strList.Add(new string[] { "a", "a", "b" });    //Returns empty string
-            strList.Add(new string[] { "c", "c"});          //Returns "c"
-            strList.Add(new string[] { "ca", "c" });        //Returns empty string
-            strList.Add(new string[] { "aa", "a" });        //Returns "a"
+            strList.Add(new string[] { "c", "c" });          //Returns "c"
+            //strList.Add(new string[] { "a", "b" });         //Returns empty string
+            //strList.Add(new string[] { "a", "a", "b" });    //Returns empty string
+            //strList.Add(new string[] { "ca", "a" });        //Returns empty string
+            //strList.Add(new string[] { "ca", "c" });        //Returns empty string
+            //strList.Add(new string[] { "aa", "a" });        //Returns "a"
 
             //Main method execution:
             foreach (string[] item in strList)
@@ -50,7 +51,7 @@ namespace LongestCommonPrefix
 
             if (strs.Length == 0)
             {
-                return "";
+                return prefix.ToString();
             }
             else if (strs.Length == 1)
             {
@@ -58,10 +59,37 @@ namespace LongestCommonPrefix
             }
             else
             {
-                
+                int min = GetShortestStringIndex(strs);
+
+
             }
 
             return prefix.ToString();
         }
+
+
+        /// <summary>
+        ///Get id of the shortest string
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        private int GetShortestStringIndex(string[] str)
+        {
+            int min = 0;
+            int minLength = str[min].Length;
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (minLength > str[i].Length)
+                {
+                    min = i;
+                    minLength = str[i].Length;
+                }
+            }
+
+            return min;
+        }
+
+        //End of class
     }
 }
