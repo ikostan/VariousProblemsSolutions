@@ -13,7 +13,6 @@ namespace LongestPalindromicSubstring
 
         Example: 
         Input: "babad", Output: "bab"
-
         Note: "aba" is also a valid answer.
         
         Example:
@@ -37,6 +36,7 @@ namespace LongestPalindromicSubstring
             string[] arr = new string[] {
                 "a",
                 "bb",
+                "cbbd",
                 "babad",
                 "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth"
             };
@@ -46,11 +46,14 @@ namespace LongestPalindromicSubstring
                 Console.WriteLine(prg.LongestPalindrome(str));
             }
 
-            //Console.WriteLine(prg.LongestPalindrome("civilw"));
-
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Find Longest Palindromic Substring
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public string LongestPalindrome(string s)
         {
             StringBuilder str = new StringBuilder("", 1000);
@@ -78,7 +81,6 @@ namespace LongestPalindromicSubstring
             char[] reverse = str.ToCharArray();
             Array.Reverse(reverse);
             string rStr = new string(reverse);
-            //Debug.WriteLine($"original: {str}, reversed: {rStr}");
             return rStr;
         }
 

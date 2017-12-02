@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestSubstringWithoutRepe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestPalindromicSubstring", "LongestPalindromicSubstring\LongestPalindromicSubstring.csproj", "{E5BA0DBA-6CCC-4D02-AC5D-D367A9ADDD27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestCommonPrefix", "LongestCommonPrefix\LongestCommonPrefix.csproj", "{335A9202-260D-44EF-813D-DEF42B0EB0A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{E5BA0DBA-6CCC-4D02-AC5D-D367A9ADDD27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5BA0DBA-6CCC-4D02-AC5D-D367A9ADDD27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5BA0DBA-6CCC-4D02-AC5D-D367A9ADDD27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335A9202-260D-44EF-813D-DEF42B0EB0A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335A9202-260D-44EF-813D-DEF42B0EB0A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335A9202-260D-44EF-813D-DEF42B0EB0A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335A9202-260D-44EF-813D-DEF42B0EB0A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
