@@ -34,7 +34,7 @@ namespace MergeTwoSortedLists
 
             Program prg = new Program();
 
-            //Test cases: [1,2,4] [1,3,4]
+            //Test cases: [1,2,4] [1,3,5]
 
             int[] first = { 1, 2, 4 };
             int[] second = { 1, 3, 5 };
